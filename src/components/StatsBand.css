@@ -1,0 +1,58 @@
+.stats-band-section {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverted);
+  padding: clamp(3.5rem, 5vw, 5.5rem) 0;
+  border-top: 1px solid var(--color-border-dark);
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--color-accent);
+}
+
+.stat-number {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 2rem + 2vw, 3.75rem);
+  font-weight: 400;
+  color: var(--color-text-inverted);
+  line-height: 1.05;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.stat-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.stat-label {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #D4AF7A;
+  text-transform: uppercase;
+}
+
+.stat-sub {
+  font-size: var(--text-xs);
+  color: var(--color-text-inverted-muted);
+}
